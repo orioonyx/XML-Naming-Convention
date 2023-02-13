@@ -1,10 +1,10 @@
 # XML-Naming-Convention
+![](https://user-images.githubusercontent.com/74607521/218515659-9c9fecb9-1d89-4486-8062-14bfa0566a8b.png)
 
 Android uses XML to define the layout of its user interface elements. The structure and naming of XML elements are important in ensuring that the user interface is well-defined, easy to understand, and maintainable.
 
 Here are some general naming conventions for Android XML files:
 <br/><br/>
-
 
 # Basic Principle
     <WHAT>-<WHERE>-<DESCRIPTION>-<SIZE>
@@ -37,25 +37,21 @@ ex) title, content, info, profile...
 Either a precise size or size bucket. Optionally used for drawables and dimensions.
 
 ex) 24dp, small...
-<br/><br/>
-
-![](https://user-images.githubusercontent.com/74607521/218457860-1dc3a88b-8045-4366-8ded-c025ff26c47d.png)
-<br/><br/>
-
+<br/><br/><br/>
 
 # Layouts
 
     <WHAT>_<WHERE>_<DESCRIPTION>.xml
 
 ex) activity_main.xml, fragment_onboarding, item_product, fragment_product_search
-<br/>
+<br/><br/>
 
 # Strings
 
     <WHERE>_<DESCRIPTION> or all_<DESCRIPTION>
 
 ex) main_title, user_namehint, login_titlehint, all_done, all_fail
-<br/>
+<br/><br/>
 
 # Drawables
 
@@ -68,7 +64,7 @@ ex) main_title, user_namehint, login_titlehint, all_done, all_fail
 `DESCRIPTION` : check, like, btn, close...<br/>
 <br/>
 
-`SUFFIX`
+`SUFFIX` :
 
 **DIRECTION** : left, right, up, down...<br/>
 **SHAPE** : circle, square, roundsquare...<br/>
@@ -78,15 +74,15 @@ ex) main_title, user_namehint, login_titlehint, all_done, all_fail
 **SIZE** : 24dp, small...
 
 ex) ic_login_btn_disabled.png, ic_heart_on.png, ic_check_white_small.png
-<br/>
+<br/><br/>
 
 # IDs
 
     <KIND>_<WHERE>
     
-`KIND`
+`KIND` :
 
-**most commonly used android view classes**
+(most commonly used android view classes)
     
 | View Class        | Abbrevation       |
 | ----------------- | ----------------- |    
@@ -110,13 +106,13 @@ ex) ic_login_btn_disabled.png, ic_heart_on.png, ic_check_white_small.png
 
 
 ex) iv_profile, et_login_username, btn_submit, rv_product
-<br/>
+<br/><br/>
 
 # Dimensions
 
     <WHAT>_<WHERE>_<DESCRIPTION>_<SIZE>
 
-`WHAT`
+`WHAT` :
 
 | Prefix    | Usage       |
 | --------- | ----------- |
@@ -130,5 +126,5 @@ ex) iv_profile, et_login_username, btn_submit, rv_product
 | textsize  | size of text in sp |  
         
 ex) height_toolbar, textsize_nomal
-<br/>     
-<br/> 
+<br/><br/>
+
