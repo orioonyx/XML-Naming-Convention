@@ -1,6 +1,7 @@
 # XML-Naming-Convention
 
 A successful XML naming convention should adhere to the following guidelines:
+<br/><br/>
 
 
 # Basic Principle
@@ -19,7 +20,7 @@ ex) activity, fragment, view, item, layout...
 
 Describe where it logically belongs in the app. Resources used in multiple screens use all, all others use the custom part of the Android view subclass they are in.
 
-ex) all, main, user...
+ex) all, main, home, login, user...
 
 `DESCRIPTION`
 ------------------------------------
@@ -34,3 +35,98 @@ ex) title, content, info, profile...
 Either a precise size or size bucket. Optionally used for drawables and dimensions.
 
 ex) 24dp, small...
+<br/><br/>
+
+![](https://user-images.githubusercontent.com/74607521/218457860-1dc3a88b-8045-4366-8ded-c025ff26c47d.png)
+<br/><br/>
+
+
+# Layouts
+
+    <WHAT>_<WHERE>_<DESCRIPTION>.xml
+
+ex) activity_main.xml, fragment_onboarding, item_product, fragment_product_search
+<br/>
+
+# Strings
+
+    <WHERE>_<DESCRIPTION> or all_<DESCRIPTION>
+
+ex) main_title, user_namehint, login_titlehint, all_done, all_fail
+<br/>
+
+# Drawables
+
+    <WHAT>_<WHERE>_<DESCRIPTION>_<SUFFIX>
+    
+    <SUFFIX> : <DIRECTION>_<SHAPE>_<OUTLINE>_<STATE>_<COLOR>_<SIZE>
+  
+`WHAT` : ic, bg, img, logo...<br/>
+`WHERE` : navi, tab, home, login...<br/>
+`DESCRIPTION` : check, like, btn, close...<br/>
+<br/>
+
+`SUFFIX`
+
+**DIRECTION** : left, right, up, down...<br/>
+**SHAPE** : circle, square, roundsquare...<br/>
+**OUTLINE** : outline, border...<br/>
+**STATE** : on, off, activated, disabled, normal...<br/>
+**COLOR** : white, black...<br/>
+**SIZE** : 24dp, small...
+
+ex) ic_login_btn_disabled.png, ic_heart_on.png, ic_check_white_small.png
+<br/>
+
+# IDs
+
+    <KIND>_<WHERE>
+    
+`KIND`
+
+**most commonly used android view classes**
+    
+| View Class        | Abbrevation       |
+| ----------------- | ----------------- |    
+| CoordinatorLayout | cdl               |
+| ConstraintLayout  | csl               |
+| LinearLayout      | ll                |
+| RelativeLayout    | rl                |
+| AppBarLayout      | abl               |
+| Button            | btn               |
+| EditText          | et                |
+| TextView          | tv                |
+| ProgressBar       | pb                |
+| Checkbox          | chk               |
+| RadioButton       | rb                |
+| ToggleButton      | tb                |
+| Spinner           | spn               |
+| Menu              | mnu               |
+| ListView          | lv                |
+| RecyclerView      | rv                |
+| GalleryView       | gv                |
+
+
+ex) iv_profile, et_login_username, tv_title, rv_product
+<br/>
+
+# Dimensions
+
+    <WHAT>_<WHERE>_<DESCRIPTION>_<SIZE>
+
+`WHAT`
+
+| Prefix    | Usage       |
+| --------- | ----------- |
+| width     | width in dp |      
+| height    | height in dp |  
+| size      | if width == height |  
+| margin    | margin in dp |          
+| padding   | padding in dp |          
+| elevation | elevation in dp |  
+| keyline   | absolute keyline measured from view edge in dp |          
+| textsize  | size of text in sp |  
+        
+ex) height_toolbar, textsize_nomal
+<br/>     
+<br/>        
