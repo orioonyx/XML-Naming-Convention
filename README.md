@@ -1,6 +1,8 @@
 # XML-Naming-Convention
 
-A successful XML naming convention should adhere to the following guidelines:
+Android uses XML to define the layout of its user interface elements. The structure and naming of XML elements are important in ensuring that the user interface is well-defined, easy to understand, and maintainable.
+
+Here are some general naming conventions for Android XML files:
 <br/><br/>
 
 
@@ -107,7 +109,7 @@ ex) ic_login_btn_disabled.png, ic_heart_on.png, ic_check_white_small.png
 | GalleryView       | gv                |
 
 
-ex) iv_profile, et_login_username, tv_title, rv_product
+ex) iv_profile, et_login_username, btn_submit, rv_product
 <br/>
 
 # Dimensions
@@ -129,4 +131,4 @@ ex) iv_profile, et_login_username, tv_title, rv_product
         
 ex) height_toolbar, textsize_nomal
 <br/>     
-<br/>        
+<br/> 
