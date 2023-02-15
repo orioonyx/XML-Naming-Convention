@@ -1,4 +1,4 @@
-# XML-Naming-Convention
+# Android-XML-Naming-Convention
 ![](https://user-images.githubusercontent.com/74607521/218515659-9c9fecb9-1d89-4486-8062-14bfa0566a8b.png)
 
 Android uses XML to define the layout of its user interface elements. The structure and naming of XML elements are important in ensuring that the user interface is well-defined, easy to understand, and maintainable.
@@ -56,7 +56,7 @@ ex) main_title, user_namehint, login_titlehint, all_done, all_fail
 # Drawables
 
     <WHAT>_<WHERE>_<DESCRIPTION>_<SUFFIX>
-    
+
     <SUFFIX> : <DIRECTION>_<SHAPE>_<OUTLINE>_<STATE>_<COLOR>_<SIZE>
   
 `WHAT` : ic, bg, img, logo...<br/>
